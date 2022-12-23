@@ -1,0 +1,56 @@
+.contentWrapper {
+    display: flex;
+}
+
+.userData {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.editBlock {
+    display: none;
+}
+
+.saveButton {
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: aquamarine;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.modal {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    height: 100px;
+    width: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shadow {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.newUser {
+    padding: 10px;
+    background-color: darkgrey;
+    cursor: pointer;
+}
+
+.errorMessage {
+    color: red;
+}

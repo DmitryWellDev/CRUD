@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>Document</title>
+</head>
+<body>
+<button class="newUser">Add new user</button>
+<div class="contentWrapper">
+    <div class="users"></div>
+    <div class="userData"></div>
+</div>
+<form class="editBlock" name="editUserForm">
+    <div class="inputWrapper">
+        <label for="name">Name</label>
+        <input id="name" type="text">
+        <div class="errorMessageName errorMessage"></div>
+    </div>
+    <div>
+        <label for="age">Age</label>
+        <input id="age" type="text">
+        <div class="errorMessageAge errorMessage"></div>
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input id="email" type="text">
+        <div class="errorMessageEmail errorMessage"></div>
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input id="password" type="text">
+        <div class="errorMessagePassword errorMessage"></div>
+    </div>
+    <div>
+        <label for="phone">Phone</label>
+        <input id="phone" type="text">
+        <div class="errorMessagePhone errorMessage"></div>
+    </div>
+    <div>
+        <label for="card">Card</label>
+        <input id="card" type="text">
+        <div class="errorMessageCard errorMessage"></div>
+    </div>
+    <button class="saveButton">Save</button>
+</form>
+<div class="shadow">
+    <div class="modal">
+        <button class="removeItem">Remove</button>
+        <button class="skipRemoveItem">Cancel</button>
+    </div>
+</div>
+<script src="js/data.js"></script>
+<script src="js/index.js"></script>
+<script src="js/helper.js"></script>
+</body>
+</html>
