@@ -41,12 +41,12 @@ const renderUsers = () => {
             const dataElement = document.createElement('div');
             dataElement.innerHTML =
                 `<div>
-                    <div>${usersList[i].name}</div>
-                    <div>${usersList[i].age}</div>
-                    <div>${usersList[i].email}</div>
-                    <div>${usersList[i].password}</div>
-                    <div>${usersList[i].phone}</div>
-                    <div>${usersList[i].card}</div>
+                    <div>Name: ${usersList[i].name}</div>
+                    <div>Age: ${usersList[i].age}</div>
+                    <div>Email: ${usersList[i].email}</div>
+                    <div>Password: ${usersList[i].password}</div>
+                    <div>Phone: ${usersList[i].phone}</div>
+                    <div>Card: ${usersList[i].card}</div>
                 </div>`
             userData.innerHTML = ''
             userData.appendChild(dataElement);
@@ -130,7 +130,7 @@ const renderUsers = () => {
                         ? document.querySelector(`.errorMessageAge`).textContent = 'Numbers only'
                         : document.querySelector(`.errorMessageAge`).textContent = ''
                     !validValuesObject.email
-                        ? document.querySelector(`.errorMessageEmail`).textContent = 'sales@example.com'
+                        ? document.querySelector(`.errorMessageEmail`).textContent = 'example@example.com'
                         : document.querySelector(`.errorMessageEmail`).textContent = ''
                     !validValuesObject.password
                         ? document.querySelector(`.errorMessagePassword`).textContent = 'Should be not less then 8 characters'
